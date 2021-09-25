@@ -1,0 +1,26 @@
+[
+    {
+        "Nombre": "BUZO",
+        "Stock": 1000,
+        "Color": "NEGRO",
+        "Precio": 2500
+    },
+    {
+        "Nombre": "REMERA",
+        "Stock": 0,
+        "Color": "NEGRO",
+        "Precio": 1200
+    },
+    {
+        "Nombre": "SHORT",
+        "Stock": 300,
+        "Color": "NEGRO",
+        "Precio": 1350
+    },
+    {
+        "Nombre": "BARBIJO",
+        "Stock": 800,
+        "Color": "NEGRO",
+        "Precio": 680
+    }
+]

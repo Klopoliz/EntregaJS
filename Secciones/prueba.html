@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/prueba.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <button id="open">abri</button>
+    <div id="popup" style="display: none;">     
+        <div class="content-popup">        
+         <div class="close"><a href="#" id="close"><img src="images/close.png"/></a></div>         
+        <div>          
+        <h2>Título del pop up</h2>             
+        <p>Texto de la ventana</p>             
+        <div style="float:left; width:100%;">      </div>         </div>     </div> </div> <div class="popup-overlay"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+<script> $(document).ready(function(){    
+ $('#open').on('click', function(){         
+$('#popup').fadeIn('slow');         
+$('.popup-overlay').fadeIn('slow');         
+$('.popup-overlay').height($(window).height());         
+return false;     });      
+ $('#close').on('click', function(){         $('#popup').fadeOut('slow');         
+$('.popup-overlay').fadeOut('slow');         
+return false;     }); }); 
+</script>
+</html>

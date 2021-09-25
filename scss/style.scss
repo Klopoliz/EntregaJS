@@ -1,0 +1,225 @@
+$coloroscuro: #202430;
+@mixin mp {
+  margin: 0;
+  padding: 0;
+}
+* {
+  @include mp;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 80%;
+  body {
+    font-family: "Mate SC", serif;
+    header {
+      background: $coloroscuro;
+      color: white;
+    }
+    main {
+      background: linear-gradient(to bottom, #202430, #b4a5a5);
+      color: white;
+    }
+    section {
+      background: linear-gradient(to bottom, #202430, #b4a5a5);
+      color: white;
+    }
+    footer {
+      background: $coloroscuro;
+      color: white;
+    }
+  }
+}
+a {
+  text-decoration: none;
+}
+h4 {
+  color: blueviolet;
+  text-decoration: solid;
+}
+button:hover {
+  cursor: pointer;
+}
+fieldset {
+  color: #8458b3;
+  padding: 1vh;
+  li {
+    list-style-type: none;
+  }
+}
+/* clases bootstrap */
+#menu a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+.header__logo {
+  height: 15vh;
+}
+.margin__logo {
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.dropdown-menu {
+  background-color: rgb(71, 71, 71);
+  li a:hover {
+    background-color: #212529;
+  }
+}
+.div__banner {
+  @extend.titulo__forms;
+}
+.card-title,
+.card-text {
+  color: black;
+}
+.foto__logo {
+  height: 10vh;
+}
+.foto__center {
+  @extend.titulo__forms;
+}
+.titulo__forms {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.li__footer {
+  display: flex;
+  list-style: none;
+  gap: 1vh;
+}
+.gap__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75vw;
+}
+.redes__footer {
+  @extend.titulo__forms;
+  color: #8458b3;
+  margin-top: 1vw;
+}
+.titulo_nos {
+  font-size: 500%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text_nos {
+  font-size: 150%;
+}
+.texto__nosotros {
+  display: flex;
+  flex-direction: column;
+  font-size: 150%;
+  justify-content: center;
+}
+.card {
+  padding: 1vh;
+}
+.col__pad {
+  padding: 2vh;
+}
+.col {
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  .titulo {
+    @extend.titulo__forms;
+  }
+}
+.card {
+  margin: 18px;
+  background-color: $coloroscuro;
+  p,
+  h5 {
+    color: white;
+  }
+}
+@media (max-width: 1023px) {
+  .ocultar {
+    display: none;
+  }
+  .logo__centro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .margin__logo {
+    margin: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .foot{
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.btn-flotante {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  background-color: #4e4e4e3d;
+  padding: 0 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 5px 5px 5px rgb (0 0 0 / 50%);
+  z-index: 99;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-flotante:hover {
+  color: #8458b3;
+}
+.linea__separadora {
+  margin: 10px auto;
+  width: 65%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.linea__separadora__cs{
+  @extend .linea__separadora;
+  width:40%;
+}
+.linea__separadora__valorant{
+  @extend .linea__separadora;
+  width:30%;
+}
+.linea__separadora__tienda{
+  @extend .linea__separadora;
+  width:45%;
+}
+.linea__separadora__tienda2{
+  @extend .linea__separadora;
+  width:35%;
+}
+.navbar-light .navbar-toggler {
+  background-color: #ffffff33;
+}
+.img__tabla{
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+@media (max-width: 767px) {
+  .chau__tabla {
+    display: none;
+  }
+}
+.margen__nombre{
+  margin-right: 1vh;}
+
+.btn-primary{
+  background-color: #8458b3;
+  border-color: #ffffff33;
+    &:hover{
+      background-color: wheat;
+      color: #8458b3;
+    }
+}
